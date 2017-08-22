@@ -1,4 +1,4 @@
 # authorization-microservice #
-![Auth Service Logo](resources/logo.png)
+![Auth Service Logo](src/main/resources/logo.png)
 
 Technologies
