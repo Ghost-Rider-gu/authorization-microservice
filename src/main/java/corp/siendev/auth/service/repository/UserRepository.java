@@ -1,6 +1,6 @@
 package corp.siendev.auth.service.repository;
 
-import corp.siendev.auth.service.entity.User;
+import corp.siendev.auth.service.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -8,6 +8,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  *
  * @author Golubnichenko_Yuriy
  */
-public interface UserRepository extends JpaRepository<User, Integer> {
+public interface UserRepository extends JpaRepository<UserEntity, Long> {
 
 }

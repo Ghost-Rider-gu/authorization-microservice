@@ -14,13 +14,13 @@ import java.sql.Date;
 @Data
 @Entity
 @Table(name = "user")
-public class User implements Serializable {
+public class UserEntity implements Serializable {
 
     private static final Long serialVersionUID = 23487982311093L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private long id;
 
     @Column(name = "login")
     private String userLogin;
