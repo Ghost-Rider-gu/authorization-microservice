@@ -12,7 +12,7 @@ USE `auth_service`;
 -- Table `auth_service`.`user`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `auth_service`.`user` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+  `id` BIGINT(9) NOT NULL,
   `user_uuid` VARCHAR(50) NOT NULL,
   `login` VARCHAR(45) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `auth_service`.`role` (
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `auth_service`.`user_assigment` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `user_id` INT NOT NULL,
+  `user_id` BIGINT(9) NOT NULL,
   `role_id` INT NOT NULL,
   `project_module_id` INT NOT NULL,
   PRIMARY KEY (`id`),

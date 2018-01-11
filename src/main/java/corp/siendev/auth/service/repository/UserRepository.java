@@ -11,14 +11,14 @@
 
 package corp.siendev.auth.service.repository;
 
-import corp.siendev.auth.service.entity.UserEntity;
-import org.springframework.data.jpa.repository.JpaRepository;
+import corp.siendev.auth.service.model.User;
+import org.springframework.data.repository.CrudRepository;
 
 /**
  * User repository interface.
  *
  * @author Golubnichenko_Yuriy
  */
-public interface UserRepository extends JpaRepository<UserEntity, Long> {
+public interface UserRepository extends CrudRepository<User, Long> {
 
 }
