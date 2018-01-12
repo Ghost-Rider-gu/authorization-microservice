@@ -23,25 +23,28 @@ import javax.persistence.GenerationType;
 import java.io.Serializable;
 
 /**
- * Role model.
+ * Project module model.
  *
  * @author Golubnichenko_Yuriy
  */
 @Data
 @Entity
-@Table(name = "role")
-public class Role implements Serializable {
+@Table(name = "project_module")
+public class ProjectModule implements Serializable {
 
-    private static final Long serialVersionUID = 5016618009117813770L;
+    private static final Long serialVersionUID = 7244957405053753908L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "role_name")
-    private String roleName;
+    @Column(name = "module_name")
+    private String moduleName;
 
-    @Column(name = "role_description")
-    private String roleDescription;
+    @Column(name = "module_description")
+    private String moduleDescription;
+
+    @Column(name = "module_state")
+    private boolean moduleState;
 
 }
