@@ -11,13 +11,13 @@
 
 package corp.siendev.auth.service.repository;
 
-import corp.siendev.auth.service.model.User;
+import corp.siendev.auth.service.model.ProjectModule;
 import org.springframework.data.repository.CrudRepository;
 
 /**
- * User repository interface.
+ * Project module repository interface.
  *
  * @author Golubnichenko_Yuriy
  */
-public interface UserRepository extends CrudRepository<User, Long> {
+public interface ProjectModuleRepository extends CrudRepository<ProjectModule, Long> {
 }

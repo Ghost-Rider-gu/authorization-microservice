@@ -11,13 +11,13 @@
 
 package corp.siendev.auth.service.repository;
 
-import corp.siendev.auth.service.model.User;
+import corp.siendev.auth.service.model.Role;
 import org.springframework.data.repository.CrudRepository;
 
 /**
- * User repository interface.
+ * Role repository interface.
  *
  * @author Golubnichenko_Yuriy
  */
-public interface UserRepository extends CrudRepository<User, Long> {
+public interface RoleRepository extends CrudRepository<Role, Long> {
 }
