@@ -17,8 +17,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Entity;
 import javax.persistence.Column;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
@@ -52,15 +50,12 @@ public class User implements Serializable {
     private String userPassword;
 
     @Column(name = "created_at", columnDefinition = "DATETIME")
-    @Temporal(TemporalType.TIMESTAMP)
     private Date createdDate;
 
     @Column(name = "updated_at", columnDefinition = "DATETIME")
-    @Temporal(TemporalType.TIMESTAMP)
     private Date updateDate;
 
     @Column(name = "deleted_at", columnDefinition = "DATETIME")
-    @Temporal(TemporalType.TIMESTAMP)
     private Date deleteDate;
 
 }
