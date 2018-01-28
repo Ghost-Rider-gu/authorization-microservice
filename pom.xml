@@ -30,6 +30,7 @@
 
         <swagger.version>2.0.0-rc1</swagger.version>
         <hibernate.version>5.2.10.Final</hibernate.version>
+        <bootstrap.version>3.3.7-1</bootstrap.version>
     </properties>
 
     <dependencies>
@@ -96,8 +97,9 @@
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
-            <version>4.0.0-beta.3</version>
+            <version>${bootstrap.version}</version>
         </dependency>
+
         <!-- JWT -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
