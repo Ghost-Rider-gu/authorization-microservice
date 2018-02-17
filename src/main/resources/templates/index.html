@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+    * Copyright (c) 2018 SienDev company. All rights reserved.
+    * Author Ghost Rider aka Golubnichenko Yuriy
+    * Email ghostrider.gu@gmail.com
+    *
+    * This is a free software; you can redistribute it and/or modify it under the terms of the
+    * GNU Lesser General Public License as published by the Free Software Foundation;
+    * either version 2.1 of the License, or (at your option) any later version.
+    * This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+    * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+    * See the GNU Lesser General Public License for more details.
+!-->
+<html lang="en">
+<head>
+    <title>Auth Service - authorization</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid bg-auth">
+        <div class="row">
+            <div class="cold-md-4 col-sm-4 col-xs-12"></div>
+            <div class="cold-md-4 col-sm-4 col-xs-12">
+            <!-- Start form authorization -->
+                <form class="form-auth">
+                    <h2>Auth Service Login</h2>
+                    <div class="form-group">
+                        <label for="authLogin">Your login</label>
+                        <input type="text" class="form-control" id="authLogin" aria-describedby="userLogin" placeholder="Enter your login">
+                        <small id="userLogin" class="form-text text-muted">Please check your login and password</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="authPassword">Your password</label>
+                        <input type="password" class="form-control" id="authPassword" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="authCheck">
+                        <label class="form-check-label" for="authCheck">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-block">Login</button>
+                </form>
+            <!-- End form authorization -->
+            </div>
+            <div class="cold-md-4 col-sm-4 col-xs-12"></div>
+        </div>
+    </div>
+</body>
+</html>

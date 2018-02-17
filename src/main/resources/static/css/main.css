@@ -1,0 +1,31 @@
+/*
+ * Copyright (c) 2018 SienDev company. All rights reserved.
+ * Author Ghost Rider aka Golubnichenko Yuriy
+ * Email ghostrider.gu@gmail.com
+ *
+ * This is a free software; you can redistribute it and/or modify it under the terms of the
+ * GNU Lesser General Public License as published by the Free Software Foundation;
+ * either version 2.1 of the License, or (at your option) any later version.
+ * This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Lesser General Public License for more details.
+ */
+
+*{
+    color: white;
+}
+
+.bg-auth{
+    background: url("../img/bg.jpg") no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-auth{
+    border: 0px solid white;
+    padding: 50px 60px;
+    margin-top: 20vh;
+    -webkit-box-shadow: -1px 10px 26px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 26px 5px rgba(0,0,0,0.75);
+    box-shadow: -1px 10px 26px 5px rgba(0,0,0,0.75);
+}
