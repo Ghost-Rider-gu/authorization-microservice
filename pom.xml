@@ -28,7 +28,7 @@
 
         <build.number>1</build.number>
 
-        <swagger.version>2.0.0-rc1</swagger.version>
+        <swagger.version>2.0.0-rc2</swagger.version>
         <hibernate.version>5.2.10.Final</hibernate.version>
         <bootstrap.version>3.3.7-1</bootstrap.version>
     </properties>
