@@ -1,4 +1,6 @@
 # authorization-microservice #
+![build](https://travis-ci.org/Ghost-Rider-gu/authorization-microservice.svg?branch=master)
+
 ![auth_service logo](https://user-images.githubusercontent.com/1051058/34733751-8ddd1ef4-f57a-11e7-8710-6b4cf94198ff.png)
 
 Simple integration schema 
