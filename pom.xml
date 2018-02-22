@@ -27,8 +27,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
         <build.number>1</build.number>
-
-        <swagger.version>2.0.0-rc1</swagger.version>
+             
         <hibernate.version>5.2.10.Final</hibernate.version>
         <bootstrap.version>3.3.7-1</bootstrap.version>
     </properties>
@@ -78,13 +77,6 @@
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate.version}</version>
             <scope>compile</scope>
-        </dependency>
-
-        <!-- Swagger -->
-        <dependency>
-            <groupId>io.swagger</groupId>
-            <artifactId>swagger-project</artifactId>
-            <version>${swagger.version}</version>
         </dependency>
 
         <!-- Lombok -->
