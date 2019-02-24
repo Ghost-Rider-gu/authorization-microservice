@@ -32,8 +32,8 @@ import java.util.Set;
  */
 @Data
 @Entity
-@Table(name = "project_module")
-public class ProjectModule implements Serializable {
+@Table(name = "service")
+public class Service implements Serializable {
 
     private static final Long serialVersionUID = 7244957405053753908L;
 
@@ -41,16 +41,16 @@ public class ProjectModule implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @ManyToMany(mappedBy = "projectModules")
+    @ManyToMany(mappedBy = "services")
     private Set<User> users = new HashSet<>();
 
-    @Column(name = "module_name")
-    private String moduleName;
+    @Column(name = "name")
+    private String name;
 
-    @Column(name = "module_description")
-    private String moduleDescription;
+    @Column(name = "description")
+    private String description;
 
-    @Column(name = "module_state")
-    private boolean moduleState;
+    @Column(name = "state")
+    private boolean state;
 
 }

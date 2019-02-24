@@ -44,10 +44,10 @@ public class Role implements Serializable {
     @ManyToMany(mappedBy = "roles")
     private Set<User> users = new HashSet<>();
 
-    @Column(name = "role_name")
-    private String roleName;
+    @Column(name = "name")
+    private String name;
 
-    @Column(name = "role_description")
-    private String roleDescription;
+    @Column(name = "description")
+    private String description;
 
 }

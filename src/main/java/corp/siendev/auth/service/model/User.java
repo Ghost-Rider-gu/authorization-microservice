@@ -12,6 +12,7 @@
 package corp.siendev.auth.service.model;
 
 import lombok.Data;
+import org.hibernate.validator.constraints.Range;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -45,32 +46,29 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @ManyToMany
-    @JoinTable(name = "user_project_module", joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "project_module_id"))
-    private Set<ProjectModule> projectModules = new HashSet<>();
-
-    @ManyToMany
-    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private Set<Role> roles = new HashSet<>();
-
-    @Column(name = "user_uuid")
-    private String userUuid;
-
     @Column(name = "login")
-    private String userLogin;
+    private String login;
 
     @Column(name = "password")
-    private String userPassword;
+    @Range(min = 8)
+    private String password;
 
     @Column(name = "created_at", columnDefinition = "DATETIME")
-    private Date createdDate;
+    private Date createdAt;
 
     @Column(name = "updated_at", columnDefinition = "DATETIME")
-    private Date updateDate;
+    private Date updatedAt;
 
     @Column(name = "deleted_at", columnDefinition = "DATETIME")
-    private Date deleteDate;
+    private Date deletedAt;
 
+    @ManyToMany
+    @JoinTable(name = "user_service", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "service_id", referencedColumnName = "id"))
+    private Set<Service> services = new HashSet<>();
+
+    @ManyToMany
+    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
+    private Set<Role> roles = new HashSet<>();
 }
